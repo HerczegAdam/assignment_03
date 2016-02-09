@@ -116,9 +116,9 @@ def check_coincident(a, b):
     """
     return None
     coincident = False
-        if a[0]==b[0] and a[1]==b[1]:
-        coincident = True
-        return coincident # Add the logic to check if coincident here
+     if a[0]==b[0] & a[1]==b[1]:
+     coincident = True
+     return coincident # Add the logic to check if coincident here
 
 
 def check_in(point, point_list):
