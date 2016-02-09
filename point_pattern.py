@@ -116,10 +116,11 @@ def check_coincident(a, b):
             Whether the points are equal
     """
     #return None # Add the logic to check if coincident here
-    coincident = False
+
     if a[0]==b[0] & a[1]==b[1]:
-     coincident = True
-     return coincident 
+        coincident = True
+        return coincident
+
 
 
 def check_in(point, point_list):
