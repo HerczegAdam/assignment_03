@@ -27,7 +27,10 @@ def manhattan_distance(a, b):
     distance : float
                The Manhattan distance between the two points
     """
-    distance = None ## Add the algorithm to compute manhattan distance here
+    distance = None # Add the algorithm to compute manhattan distance here
+    x = abs(b[0]-a[0])
+    y = abs(b[1]-a[1])
+    distance = x + y
     return distance
 
 
@@ -87,8 +90,10 @@ def shift_point(point, x_shift, y_shift):
     x = getx(point)
     y = gety(point)
 
-    x_new = None # Add the logic to shift x here
-    y_new = None # Add the logic to shift y here
+    x_new = None
+    x_new = x+x_shift# Add the logic to shift x here
+    y_new = None
+    y_new = y+y_shift# Add the logic to shift y here
 
     return x_new, y_new
 
@@ -109,7 +114,11 @@ def check_coincident(a, b):
     equal : bool
             Whether the points are equal
     """
-    return None # Add the logic to check if coincident here
+    return None
+    coincident = False
+        if a[0]==b[0] and a[1]==b[1]:
+        coincident = True
+        return coincident # Add the logic to check if coincident here
 
 
 def check_in(point, point_list):
@@ -124,7 +133,8 @@ def check_in(point, point_list):
     point_list : list
                  in the form [point, point_1, point_2, ..., point_n]
     """
-    return None # Add the logic to check if a point is in the point list here
+    return None
+    # Add the logic to check if a point is in the point list here
 
 
 def getx(point):
