@@ -117,7 +117,7 @@ def check_coincident(a, b):
     """
     #return None # Add the logic to check if coincident here
 
-    if a[0]==b[0] & a[1]==b[1]:
+    if a[0]==b[0] and a[1]==b[1]:
         coincident = True
         return coincident
 
